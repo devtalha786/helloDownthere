@@ -1,12 +1,16 @@
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
+import FAQSection from "./FaqSection";
 const Home = () => {
   return (
     <div>
-      <Header />
-      <HeroSection />
+      <div className="alienn-img">
+        <Header />
+        <HeroSection />
+      </div>
       <AboutSection />
+      <FAQSection />
     </div>
   );
 };

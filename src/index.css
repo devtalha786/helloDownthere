@@ -2,73 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Jotter Press Design System - Contemporary Publishing Colors & Typography */
+/* Cosmic Alien Design System - Space Theme
+All colors MUST be HSL.
+*/
 
 @layer base {
   :root {
-    /* Core neutrals */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    /* Space backgrounds - deep cosmic colors */
+    --background: 230 35% 7%;
+    --foreground: 0 0% 98%;
 
-    /* Editorial grays */
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --card: 230 25% 10%;
+    --card-foreground: 0 0% 95%;
 
-    /* Brand colors */
-    --primary: 0 0% 10%;
-    --primary-foreground: 0 0% 98%;
+    --popover: 230 30% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Vibrant accent colors for book displays */
-    --emerald: 160 84% 39%;
-    --emerald-light: 158 64% 52%;
-    --golden: 45 93% 58%;
-    --lavender: 250 60% 75%;
-    --coral: 14 91% 69%;
-    --mint: 167 85% 89%;
-    --sage: 158 25% 85%;
+    /* Alien lime green - primary cosmic energy */
+    --primary: 82 100% 60%;
+    --primary-foreground: 230 35% 7%;
 
-    /* Interactive states */
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 10%;
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 10%;
+    /* Secondary cosmic blue */
+    --secondary: 230 20% 15%;
+    --secondary-foreground: 0 0% 95%;
 
-    /* Borders & inputs */
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 10%;
+    /* Muted space colors */
+    --muted: 230 15% 12%;
+    --muted-foreground: 0 0% 70%;
 
-    /* Design tokens */
-    --radius: 4px;
+    /* Bright accent - electric lime */
+    --accent: 82 100% 60%;
+    --accent-foreground: 230 35% 7%;
+
+    /* Danger red for alerts */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders and inputs - subtle cosmic */
+    --border: 230 20% 20%;
+    --input: 230 25% 15%;
+    --ring: 82 100% 60%;
+
+    /* Cosmic gradients */
+    --gradient-space: linear-gradient(
+      135deg,
+      hsl(230, 35%, 7%) 0%,
+      hsl(240, 40%, 10%) 50%,
+      hsl(250, 30%, 8%) 100%
+    );
+    --gradient-alien: linear-gradient(
+      135deg,
+      hsl(82, 100%, 60%) 0%,
+      hsl(90, 90%, 55%) 100%
+    );
+    --gradient-cosmic: radial-gradient(
+      ellipse at center,
+      hsl(230, 25%, 15%) 0%,
+      hsl(230, 35%, 7%) 70%
+    );
+
+    /* Shadows and glows */
+    --shadow-alien-glow: 0 0 30px hsl(82, 100%, 60% / 0.3);
+    --shadow-cosmic: 0 10px 40px hsl(230, 35%, 5% / 0.8);
+
+    /* Animation transitions */
+    --transition-cosmic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
+
     --sidebar-foreground: 240 5.3% 26.1%;
+
     --sidebar-primary: 240 5.9% 10%;
+
     --sidebar-primary-foreground: 0 0% 98%;
+
     --sidebar-accent: 240 4.8% 95.9%;
+
     --sidebar-accent-foreground: 240 5.9% 10%;
+
     --sidebar-border: 220 13% 91%;
+
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
-    --primary: 0 0% 95%;
-    --primary-foreground: 0 0% 8%;
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 95%;
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 95%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 0% 95%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -86,18 +132,84 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-family: "Open Sans", sans-serif;
+    @apply bg-background text-foreground;
+    font-family: "Orbitron", monospace;
+    background: var(--gradient-space);
+    background-attachment: fixed;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
+  /* Cosmic animations and effects */
+  .alien-glow {
+    box-shadow: var(--shadow-alien-glow);
+  }
+
+  .cosmic-transition {
+    transition: var(--transition-cosmic);
+  }
+
+  .starfield {
+    background-image: radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+      radial-gradient(
+        2px 2px at 40px 70px,
+        rgba(255, 255, 255, 0.8),
+        transparent
+      ),
+      radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+      radial-gradient(
+        1px 1px at 130px 80px,
+        rgba(255, 255, 255, 0.6),
+        transparent
+      ),
+      radial-gradient(2px 2px at 160px 30px, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+  }
+
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px currentColor;
   }
 }
 
+.alienn-img {
+  background-image: url("../public//images/alien.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  
+}
+.landing {
+  background-image: url("../public//images/landing-bg-1.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+}

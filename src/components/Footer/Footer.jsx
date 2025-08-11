@@ -1,4 +1,4 @@
-import ufoSpaceship from "@/assets/ufo-spaceship.jpg";
+import ufoSpaceship from "../../../public/images/ufo-spaceship.jpg";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
