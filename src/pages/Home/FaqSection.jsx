@@ -72,11 +72,11 @@ const FAQSection = () => {
     <section id="faq" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-cosmic font-bold text-4xl md:text-5xl text-primary glow-text text-center mb-16">
+          <h2 className="font-cosmic font-bold text-4xl md:text-5xl text-[#CFFF7F] glow-text text-center mb-16">
             FAQS
           </h2>
 
-          <p className="text-center text-muted-foreground mb-12 text-lg">
+          <p className="text-center max-w-2xl mx-auto text-[#CFFF7F] mb-12 text-[13px] leading-[18px] font-normal">
             We understand enough about your fragile human brains to know that
             you probably have a lot of questions. Please see some of our most of
             technologically superior space beings on your intergalactic
@@ -99,6 +99,14 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-transparent border border-[#CFFF7F]   py-4">
+          <div className="whitespace-nowrap animate-marquee text-[#CFFF7F] px-10 font-cosmic text-sm">
+            🛸 WE COME IN PEACE 🛸 WE COME IN PEACE 🛸 WE COME IN PEACE 🛸 WE
+            COME IN PEACE 🛸 WE COME IN PEACE 🛸 COME IN PEACE 🛸 WE COME IN
+            PEACE 🛸 COME IN PEACE 🛸 WE COME IN PEACE 🛸 COME IN PEACE 🛸 WE
+            COME IN PEACE 🛸
+          </div>
         </div>
       </div>
     </section>

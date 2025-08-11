@@ -2,7 +2,7 @@ import earthFromSpace from "../../../public/images/earth.webp";
 
 const AboutSection = () => {
   return (
-    <section id="about"  className="py-20 landing relative">
+    <section id="about" className="py-20  relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-16">
@@ -13,37 +13,36 @@ const AboutSection = () => {
             />
           </div>
 
-          <h2 className="font-cosmic font-bold text-4xl md:text-5xl text-primary text-[#CFFF7F] mb-12">
+          <h2 className="font-cosmic text-[19px] leading-[27px] font-normal text-primary text-[#CFFF7F] mb-12">
             GREETINGS, EARTHLINGS!
           </h2>
 
-          <div className="space-y-8 text-lg md:text-xl leading-relaxed">
-            <p className="text-foreground">
+          <div className="space-y-4 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[13px] leading-[18px] font-normal text-primary text-[#CFFF7F]">
               What does a highly advanced civilization have to do to get noticed
               around here?
             </p>
 
-            <p className="text-muted-foreground">
-              We hail from the constellation{" "}
-              <span className="text-primary">Canis Minor</span> and we're here
-              to make our grand debut, your oceana for rocket fuel, kidnap!
-              That's more of a Lewis Major vibe.
+            <p className="text-[13px] leading-[18px] font-normal text-primary text-[#CFFF7F]">
+              We hail from the constellation Canis Minor and we’re here to
+              harvest your organs and drain your oceans for rocket fuel.
+              Kidding! That’s more of a Canis Major vibe.
             </p>
 
-            <p className="text-muted-foreground">
-              Given that our human civilization has not yet achieved
-              interstellar travel, you are likely unaware of how lovely space
-              is. We've had the pick of hooked garbage graveyards so a couple of
-              film-wrapped Carls we know, and they all say: find some friends in
-              the cosmos.
+            <p className="text-[13px] leading-[18px] font-normal text-primary text-[#CFFF7F]">
+              Given that your human civilization has not yet achieved
+              interstellar travel, you are likely unaware of how lonely space
+              is. But we are aware! So we hooked up some garvanplows to a couple
+              of flargenbows (and a minoflor, just for giggles) and set out to
+              find some friends in the cosmos.
             </p>
 
-            <p className="text-muted-foreground">
-              For the past thousand years, we've been trying to make contact
-              with earthlings. But then we dive down Super Neophyte-like eyes
-              have captured countless UFO footage which has been buried by your
+            <p className="text-[13px] leading-[18px] font-normal text-primary text-[#CFFF7F]">
+              For the last hundred years, we’ve been trying to make contact with
+              you, to no avail. But then our Lead Human Researcher made a huge
+              breakthrough: nothing is real to humans until it is on the
               internet. So with the help of your Squarespace technology, we
-              successfully hope the big-dish life is in the stars!
+              sincerely hope the 55,419th time is the charm!
             </p>
           </div>
         </div>
