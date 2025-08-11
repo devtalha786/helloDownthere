@@ -1,103 +1,53 @@
+import ufoSpaceship from "@/assets/ufo-spaceship.jpg";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      {/* Newsletter Section */}
+    <footer className="py-20 relative border-t border-border">
+      <div className="container mx-auto px-4 text-center">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-12">
+            <img
+              src={ufoSpaceship}
+              alt="UFO spaceship with lime green lights"
+              className="w-32 h-20 mx-auto alien-glow floating"
+            />
+          </div>
 
-      {/* Main Footer */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div>
-            <h4 className="font-serif text-lg mb-4">Jotter Press</h4>
-            <address className="text-sm text-primary-foreground/70 not-italic">
-              132 Ocean Street, New York City
+          <h3 className="font-cosmic font-bold text-2xl md:text-3xl text-primary glow-text mb-8">
+            USE THIS SPECIAL EDITION TEMPLATE, OR ONE OF OUR OTHER AWARD-WINNING
+            DESIGNS, AS A STARTING POINT FOR YOUR OWN WEBSITE.
+          </h3>
+
+          <Button
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground cosmic-transition font-cosmic text-lg px-8 py-6"
+          >
+            BROWSE TEMPLATES
+          </Button>
+
+          <div className="mt-16 pt-8 border-t border-border">
+            <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
+              <span>🛸</span>
+              <span className="font-cosmic">WE COME IN PEACE</span>
+              <span>🛸</span>
+            </div>
+
+            <div className="mt-4 text-xs text-muted-foreground font-cosmic">
+              Create A Site Like This
               <br />
-              publishing@jotterpress.com
-              <br />
-              (914) 555-6603
-            </address>
-          </div>
-
-          {/* Shop */}
-          <div>
-            <h5 className="font-medium mb-4">Shop</h5>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  Help
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  Legal
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Instagram */}
-          <div>
-            <h5 className="font-medium mb-4">Instagram</h5>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  Twitter
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="max-w-md mx-auto flex-col gap-y-4">
-            <h3 className="text-lg font-serif mb-4">Subscribe Newsletter</h3>
-            <div className="">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-background text-foreground border-border"
-              />
-              <Button variant="secondary" className="whitespace-nowrap mt-4">
-                Sign Up
-              </Button>
+              Powered by cosmic energy
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Social Media Links */}
+      {/* Scrolling text animation */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-primary/10 py-2">
+        <div className="whitespace-nowrap animate-marquee text-primary font-cosmic text-sm">
+          🛸 WE COME IN PEACE 🛸 WE COME IN PEACE 🛸 WE COME IN PEACE 🛸 WE COME
+          IN PEACE 🛸 WE COME IN PEACE 🛸
+        </div>
       </div>
     </footer>
   );
