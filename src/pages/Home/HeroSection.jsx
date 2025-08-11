@@ -5,14 +5,14 @@ const HeroSection = () => {
       className="min-h-screen border-b border-[#CFFF7F]  mt-12 flex items-center justify-center relative starfield overflow-hidden"
     >
       <div className="container mx-auto px-4 py-20 text-center">
+        <h1 className="font-cosmic font-black  text-6xl md:text-8xl lg:text-[242px] leading-[302px] text-[#CFFF7F]  mb-10 tracking-[-0.1em]">
+          HELLO
+        </h1>
         <div className="max-w-6xl mx-auto">
-          <h1 className="font-cosmic font-black  text-6xl md:text-8xl lg:text-[242px] leading-[302px] text-[#CFFF7F]  mb-10 tracking-[-0.1em]">
-            HELLO
-          </h1>
-          <div className="flex absolute top-32 left-80 justify-center items-end">
+          <div className="flex absolute sm:top-0 md:top-32 sm:left-0 md:left-80 justify-center items-end">
             <img
               src="../../../public/images/middle-alien.webp"
-              className="h-[600px]"
+              className="md:h-[600px] sm:h-[300px]"
               alt=""
             />
           </div>
